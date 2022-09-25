@@ -19,7 +19,7 @@ export class CreateStatementController {
 
     const splittedPath = request.originalUrl.split('/');
 
-    if (splittedPath[length - 1] != 'deposit' || splittedPath[length - 1] != 'withdraw') {
+    if (splittedPath[length - 1] != 'deposit' && splittedPath[length - 1] != 'withdraw') {
       type = splittedPath[splittedPath.length - 2] as OperationType;
     } else {
       type = splittedPath[splittedPath.length - 1] as OperationType;
