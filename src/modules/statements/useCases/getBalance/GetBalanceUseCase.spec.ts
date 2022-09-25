@@ -29,7 +29,7 @@ describe("Get Balance", () => {
   it("should be able to get an user's balance", async () => {
 
     const userTest = {
-      name: "ana julia",
+      name: "Test name",
       email: "teste@email.com",
       password: "123456"
     }
